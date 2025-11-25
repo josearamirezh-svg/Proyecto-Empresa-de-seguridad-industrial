@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="icon" href="logo_pronaltex_ultimo.ico">
+
+  <!-- TailwindCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="styles_login.css">
+  <link rel="stylesheet" href="styleu.css">
+  <link rel="stylesheet" href="navbar.css"> <!-- 🔹 nuevo archivo con los estilos del menú -->
+  <link rel="stylesheet" href="footer.css"> <!-- 🔹 nuevo archivo con los estilos del footer -->  
+
+  <script src="register.js" defer></script>
+  <script src="menu.js" defer></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="body-page" style="background-image: url('register2_fondo.jpg');">
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+        <a href="home.html" class="logo-link"> 
+          <img src="Adobe Express - file.png" alt="Pronaltex Logo" class="logo_title" >
+        </a>
+
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="navbar-right">
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+        
+        <!-- 🔽 Menú desplegable -->
+        <div class="dropdown">
+          <a href="cataloge.html" class="dropbtn">Catálogo</a>
+          <div class="dropdown-content">
+            <a href="#">Equipos contra incendios</a>
+            <a href="#">Equipos de emergencia</a>
+            <a href="#">Equipo de protección personal</a>
+            <a href="#">Señalización</a>
+            <a href="#">Puntos ecológicos</a>
+          </div>
+        </div>
+        <a href="register.html" class="register">Registro</a>
+        <a href="login.html">Ingreso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== REGISTER CONTAINER ===== -->
+  <main>
+    <div class="wrapper">
+      <div class="header">
+        <div class="top">
+          <div class="logo">
+            <img src="logo_pronaltex_ultimo.png" alt="pronaltex" style="width: 175px;">
+          </div>
+
+          <h2 class="text-title">Crea tu cuenta</h2>
+
+          <div class="form">
+            <!-- ✅ FORMULARIO CORREGIDO -->
+            <form id="register-form">
+              <div class="input_field">
+                <label for="user" class="sr-only">Nombre completo</label>
+                <input type="text" name="user" id="user" placeholder="Nombre completo" class="input">
+              </div>
+
+              <div class="input_field">
+                <label for="email" class="sr-only">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" class="input">
+              </div>
+
+              <div class="input_field">
+                <label for="password" class="sr-only">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="input">
+              </div>
+
+              <div class="input_field">
+                <label for="password-confirm" class="sr-only">Confirmar Contraseña</label>
+                <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirmar Contraseña" class="input">
+              </div>
+
+              <div class="btn">
+                <button type="submit" id="registerBtn">Registrarse</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="or">
+            <div class="line"></div>
+            <p>O</p>
+            <div class="line"></div>
+          </div>
+
+          <div class="dif">
+            <div class="fb">
+              <img src="facebook.png" alt="facebook">
+              <p>Registrarse con Facebook</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="signup">
+          <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 PRONALTEX S.A.S. Todos los derechos reservados.</p>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/people/Extintores-Pronaltex-SAS/100063520665420/?pnref=lhc#" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/@joseamirramirezhernandez161" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/extintorespronaltexsas" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:info@pronaltex.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/3202806133"
+      class="whatsapp-btn"
+      target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</footer>
+
+
+</body>
+</html>

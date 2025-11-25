@@ -1,0 +1,202 @@
+/* =========================================================
+   🌐 NAVBAR PRINCIPAL - PRONALTEX
+   Combina los estilos del header, menú responsive y dropdown
+========================================================= */
+
+/* ===== HEADER GENERAL ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0;
+  padding: 0;
+  height: 14.5%;
+}
+
+/* ===== CONTENEDOR DEL NAVBAR ===== */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== LADO IZQUIERDO: LOGO Y TÍTULO ===== */
+
+.logo-link {
+  display: inline-block;    /* evita que se estire */
+  line-height: 0;           /* elimina espacio extra vertical */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: none;
+  border: none;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+.logo-link:hover {
+  opacity: 0.9; /* pequeño efecto visual opcional */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;      /* centra verticalmente */
+  justify-content: flex-start;
+  height: 100%;
+  width: fit-content;
+  padding: 0px 50px;
+  margin: 0;
+}
+
+
+.logo_title {
+  display: block;
+  padding: 0%;
+  margin: 0%;           /* elimina espacio blanco extra */
+  height: 75px;             /* ajusta según la altura del navbar */
+  width: auto;              /* mantiene proporciones */
+}
+
+.perfil{
+  display: block;           /* elimina espacio blanco extra */
+  height: 30px;             /* ajusta según la altura del navbar */
+  width: auto;              /* mantiene proporciones */
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ===== LADO DERECHO: ENLACES ===== */
+.navbar-right {
+  display: flex;
+  align-items: center;    /* centra verticalmente los enlaces */
+  justify-content: flex-end;
+  height: 100%;           /* ocupa todo el alto del navbar */
+  margin-left: 110px;
+  padding: 0px;
+}
+
+.navbar-right a {
+  font-size: 120%;
+  font-weight: 600;
+  color: #0b2545;
+  margin: 38px 15px;
+  height: 100%;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #2563eb;
+  transform: scale(1.1);
+}
+
+
+/* =========================================================
+   🔹 MENÚ DESPLEGABLE (DROPDOWN)
+========================================================= */
+/* Contenedor del dropdown */
+.dropdown {
+  position: relative;
+  display: flex;             /* 👈 asegúrate de usar flex para centrar el contenido */
+  align-items: center;       /* 👈 centra verticalmente */
+  height: 100%;              /* 👈 hace que ocupe toda la altura del navbar */
+  cursor: pointer;           /* 👈 indica que es clickeable */
+}
+
+/* Enlace principal (ej. "Catálogo") */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;              /* 👈 ocupa todo el alto del navbar */
+  padding: 0px;              /* 👈 agranda el área de hover horizontalmente */
+  text-decoration: none;
+  color: #0b2545;
+  font-weight: 600;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+/* Hover del enlace principal */
+.dropdown:hover > a {
+  color: #2563eb;
+}
+
+/* Menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  z-index: 1500;
+  padding: 8px 0;
+}
+
+/* Mostrar el menú cuando se pasa el cursor por todo el dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* =========================================================
+   🔹 MENÚ RESPONSIVE (MÓVIL)
+========================================================= */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #0b2545;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .navbar-right a {
+    color: white;
+    margin: 10px 0;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

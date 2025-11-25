@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <link rel="icon" href="logo_pronaltex_ultimo.ico">
+
+  <!-- TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+   <!-- Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles_login.css">
+  <link rel="stylesheet" href="styleu.css">
+  <link rel="stylesheet" href="navbar.css"> <!-- 🔹 nuevo archivo con los estilos del menú -->
+  <link rel="stylesheet" href="footer.css"> <!-- 🔹 nuevo archivo con los estilos del footer -->
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .oculto { display: none; }
+  </style>
+</head>
+
+<body class="body-page" style="background-image: url('extintores_fondo.jpg');">
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+        <a href="home.html" class="logo-link"> 
+          <img src="Adobe Express - file.png" alt="Pronaltex Logo" class="logo_title" >
+        </a>
+
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="navbar-right">
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+        
+        <!-- 🔽 Menú desplegable -->
+        <div class="dropdown">
+          <a href="cataloge.html" class="dropbtn">Catálogo</a>
+          <div class="dropdown-content">
+            <a href="#">Equipos contra incendios</a>
+            <a href="#">Equipos de emergencia</a>
+            <a href="#">Equipo de protección personal</a>
+            <a href="#">Señalización</a>
+            <a href="#">Puntos ecológicos</a>
+          </div>
+        </div>
+        <a href="register.html" class="register">Registro</a>
+        <a href="login.html">Ingreso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT -->
+  <section class="pt-40 pb-20 px-6">
+    <div class="max-w-4xl mx-auto bg-white bg-opacity-90 p-10 rounded-lg shadow-lg backdrop-blur-md">
+      <h2 class="text-4xl font-bold text-center text-blue-800 mb-10">Contáctanos</h2>
+      <form action="#" method="POST" class="space-y-6">
+        <!-- Tu formulario -->
+        <div>
+          <label class="block mb-2 text-gray-700 font-semibold">Nombre completo/Nombre de empresa</label>
+          <input type="text" name="name" required class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div>
+          <label class="block mb-2 text-gray-700 font-semibold">Email</label>
+          <input type="email" name="email" required class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div>
+          <label class="block mb-2 text-gray-700 font-semibold">Mensaje</label>
+          <textarea name="message" rows="5" required class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- NUEVO BLOQUE DE MAPA -->
+    <div class="max-w-4xl mx-auto bg-white bg-opacity-90 p-10 rounded-lg shadow-lg backdrop-blur-md mt-16">
+      <h3 class="text-3xl font-bold text-blue-800 mb-8 text-center">Nuestra Ubicación</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="space-y-4 text-gray-700">
+          <p class="text-xl font-semibold">PRONALTEX S.A.S.</p>
+          <p>Cra. 28 #66-19, Bogotá – Colombia</p>
+          <p><strong>Tel:</strong> +57 320 280 6133</p>
+          <p><strong>Email:</strong> info@pronaltex.com</p>
+          <p class="text-sm text-gray-500">Haz clic en el mapa para abrir Google Maps.</p>
+        </div>
+        <div id="map" class="w-full h-80 rounded-lg shadow-lg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2025 PRONALTEX S.A.S. Todos los derechos reservados.</p>
+
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/people/Extintores-Pronaltex-SAS/100063520665420/?pnref=lhc#" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/@joseamirramirezhernandez161" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/extintorespronaltexsas" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:info@pronaltex.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <a href="https://wa.me/3202806133" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </footer>
+
+  <!-- Google Maps Script con las coordenadas nuevas -->
+  <script>
+    function initMap() {
+      const pronaltex = { lat: 4.6598753, lng: -74.0739786 };
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: pronaltex,
+        disableDefaultUI: true,
+        gestureHandling: "cooperative",
+      });
+
+      const marker = new google.maps.Marker({
+        position: pronaltex,
+        map: map,
+        title: "PRONALTEX S.A.S. – Cra. 28 #66-19",
+      });
+
+      const info = new google.maps.InfoWindow({
+        content: `
+          <div style="font-size:14px;">
+            <strong>PRONALTEX S.A.S.</strong><br>
+            Cra. 28 #66-19, Bogotá<br>
+            <a href="https://www.google.com/maps/place/PRONALTEX/@4.659852,-74.073772,20z/data=!4m6!3m5!1s0x8e3f9a53a7c10cab:0x24f25e38ec5ea311!8m2!3d4.6598753!4d-74.0739786!16s%2Fg%2F1pty8zw1v?hl=es-ES&entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver en Google Maps</a>
+          </div>
+        `
+      });
+
+      marker.addListener("click", () => info.open(map, marker));
+      info.open(map, marker);
+    }
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhD0HVg0dEnpuU6wXUg6gDZUzx9LTTeYc&callback=initMap"></script>
+
+</body>
+
+</html>

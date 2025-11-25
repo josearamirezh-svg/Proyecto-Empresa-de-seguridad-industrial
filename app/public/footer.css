@@ -1,0 +1,103 @@
+/* =========================================================
+   🔻 FOOTER - PRONALTEX S.A.S
+   Corregido para ancho completo y botón WhatsApp centrado
+========================================================= */
+
+.footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 1.5rem 5rem;
+  margin-top: 2.5rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+}
+
+.footer p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  margin-left: -100px; /* 🔹 Mueve los íconos a la izquierda (ajusta el valor) */
+}
+
+.footer-socials a {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-socials a[href*="facebook"]:hover {
+  color: #1877f2;
+}
+
+.footer-socials a[href*="youtube"]:hover {
+  color: #ff0000;
+}
+
+.footer-socials a[href*="instagram"]:hover {
+  color: #e1306c;
+}
+
+.footer-socials a[href*="linkedin"]:hover {
+  color: #0a66c2;
+}
+
+.footer-socials a[href*="mailto"]:hover {
+  color: #ff2a2a;
+}
+
+/* ===== BOTÓN FLOTANTE WHATSAPP ===== */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.3rem;
+  background-color: #25D366;
+  color: #ffffff;
+  font-size: 1.9rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5a;
+  transform: scale(1.1);
+}

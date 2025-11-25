@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalogo </title>
+  <link rel="icon" href="logo_pronaltex_ultimo.ico">
+
+  <!-- TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+   <!-- Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styleu.css">
+  <link rel="stylesheet" href="navbar.css"> <!-- 🔹 nuevo archivo con los estilos del menú -->
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="cataloge.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .oculto { display: none; }
+  </style>
+</head>
+
+<body class="catalogo-page" style="background-image: url('fondo-apagando-fuego.png');">
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+        <a href="home.html" class="logo-link"> 
+          <img src="Adobe Express - file.png" alt="Pronaltex Logo" class="logo_title" >
+        </a>
+
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="navbar-right">
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+        
+        <!-- 🔽 Menú desplegable -->
+        <div class="dropdown">
+          <a href="cataloge.html" class="dropbtn">Catálogo</a>
+          <div class="dropdown-content">
+            <a href="equipos_contra_incendios.html">Equipos contra incendios</a>
+            <a href="#">Equipos de emergencia</a>
+            <a href="#">Equipo de protección personal</a>
+            <a href="#">Señalización</a>
+            <a href="#">Puntos ecológicos</a>
+          </div>
+        </div>
+        <a href="register.html" class="register">Registro</a>
+        <a href="login.html">Ingreso</a>
+      </nav>
+    </div>
+  </header>
+
+      <!-- Catgorias -->
+  <section class="catalogo-page">
+    <div class="categories-container">
+
+        <!-- Categoría -->
+        <div class="category-card">
+          <img src="imagen-contact.png" alt="Equipos contra incendios" class="img-card">
+          <h3>Equipos contra incendios</h3>
+          <p>Protege lo que más importa. Descubre extintores y sistemas listos para cualquier emergencia.</p>
+          <a href="#" class="btn-learn">Learn More</a>
+        </div>
+
+        <!-- Categoría -->
+        <div class="category-card">
+          <img src="equipo-de-emergencia.jpg" alt="Equipos de emergencia" class="img-card">
+          <h3>Equipos de emergencia</h3>
+          <p>Prepárate para actuar. Encuentra los kits y herramientas esenciales para salvar vidas.</p>
+          <a href="#" class="btn-learn">Learn More</a>
+        </div>
+
+        <!-- Categoría -->
+        <div class="category-card">
+          <img src="capacitaciones-salud-ocupacional.jpg" alt="Equipo de protección personal" class="img-card">
+          <h3>Equipo de protección personal</h3>
+          <p>Cuida a tu equipo con productos que garantizan seguridad y confianza en cada tarea.</p>
+          <a href="#" class="btn-learn">Learn More</a>
+        </div>
+
+        <!-- Categoría -->
+        <div class="category-card">
+          <img src="señalizaciones.png" alt="Señalización" class="img-card">
+          <h3>Señalización</h3>
+          <p>Haz visible la seguridad. Señales claras y resistentes para cada espacio de trabajo.</p>
+          <a href="#" class="btn-learn">Learn More</a>
+        </div>
+
+        <!-- Categoría -->
+        <div class="category-card">
+          <img src="kit-herramientas-auto.jpg" alt="Elementos para vehiculos" class="img-card">
+          <h3>Elementos para vehiculos</h3>
+          <p>Viaja seguro. Equipos de emergencia vehicular que cumplen con todas las normas.</p>
+          <a href="#" class="btn-learn">Learn More</a>
+        </div>
+
+        <!-- Categoría -->
+        <div class="category-card">
+          <img src="diseno-puntos-ecologicos.jpg" alt="Puntos ecológicos" class="img-card">
+          <h3>Puntos ecológicos</h3>
+          <p>Organiza y recicla con estilo. Soluciones sostenibles para un entorno más limpio.</p>
+          <a href="#" class="btn-learn">Learn More</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 PRONALTEX S.A.S. Todos los derechos reservados.</p>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/people/Extintores-Pronaltex-SAS/100063520665420/?pnref=lhc#" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/@joseamirramirezhernandez161" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/extintorespronaltexsas" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:info@pronaltex.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/3202806133"
+      class="whatsapp-btn"
+      target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</footer>
+
+</body>
+</html>

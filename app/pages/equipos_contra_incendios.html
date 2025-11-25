@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo — Equipos Contra Incendio</title>
+  <link rel="icon" href="/Imagenes/logo_pronaltex_ultimo.ico">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos desde /public -->
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="e-commerce.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="nav">
+  <div class="navbar">
+
+    <div class="navbar-left">
+      <a href="/home">
+        <img src="Adobe Express - file.png" alt="Pronaltex Logo" class="logo_title">
+      </a>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Buscar productos...">
+    </div>
+
+    <nav class="navbar-right">
+      <a href="/home">Inicio</a>
+      <a href="/about">Nosotros</a>
+      <a href="/contact">Contacto</a>
+
+      <div class="dropdown">
+        <a href="/cataloge" class="dropbtn">Catálogo</a>
+        <div class="dropdown-content">
+          <a href="/equipos_contra_incendios">Equipos contra incendios</a>
+          <a href="#">Equipos de emergencia</a>
+          <a href="#">Protección personal</a>
+          <a href="#">Señalización</a>
+          <a href="#">Puntos ecológicos</a>
+        </div>
+      </div>
+
+      <a href="/register" class="register">Registro</a>
+      <a href="/login">Ingreso</a>
+
+      <button class="btn cart-btn" id="cart-btn">
+        🛒 <span class="cart-badge" id="cart-count">0</span>
+      </button>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </div>
+</header>
+
+<!-- ===== CONTENIDO ===== -->
+<main class="container">
+
+  <aside class="sidebar">
+    <h4>Categorías</h4>
+    <div id="categories" class="category-list">
+        <button class="active" data-cat="Todos">Todos</button>
+        <button data-cat="Extintores">Equipos contra incendios</button>
+        <button data-cat="Monitores">Equipos de emergencia</button>
+        <button data-cat="Válvulas">Equipo de protección personal</button>
+        <button data-cat="Accesorios">Elementos para vehiculos</button>
+        <button data-cat="Accesorios">Puntos ecológicos</button>
+        <button data-cat="Accesorios">Señalización</button>
+    </div>
+  </aside>
+
+  <section class="catalog">
+    <div class="toolbar">
+      <div id="catalog-info">Mostrando <strong id="visible-count">0</strong> productos</div>
+      <div class="sort">
+        <label for="sort">Ordenar:</label>
+        <select id="sort">
+          <option value="relevance">Relevancia</option>
+          <option value="price-asc">Precio: bajo a alto</option>
+          <option value="price-desc">Precio: alto a bajo</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid" id="product-grid"></div>
+  </section>
+
+</main>
+
+<!-- ===== CARRITO ===== -->
+<aside class="cart-drawer" id="cart-drawer">
+  <div class="cart-head">
+    <strong>Tu carrito</strong>
+    <button id="cart-close" class="btn close-btn">Cerrar</button>
+  </div>
+
+  <ul class="cart-list" id="cart-list"></ul>
+
+  <div class="cart-footer">
+    <div>
+      <div>Total</div>
+      <div id="cart-total" class="cart-total">$0</div>
+    </div>
+    <button id="checkout" class="btn">Pagar</button>
+  </div>
+</aside>
+
+<!-- ===== JS desde /public ===== -->
+<script type="module" src="cataloge.js"></script>
+
+</body>
+</html>
