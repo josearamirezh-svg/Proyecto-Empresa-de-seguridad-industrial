@@ -1,0 +1,56 @@
+/* ==== FEATURES SECTION ==== */
+
+.features-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 70px 0;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-img {
+  width: 120px;        /* Imagen más pequeña */
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+}
+
+.feature-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1b2a6b;      /* Azul corporativo */
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.feature-text {
+  color: #4a4a4a;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .feature-img {
+    width: 100px;
+  }
+}

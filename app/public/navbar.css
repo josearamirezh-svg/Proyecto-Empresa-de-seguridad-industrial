@@ -2,28 +2,51 @@
    🌐 NAVBAR PRINCIPAL - PRONALTEX
    Combina los estilos del header, menú responsive y dropdown
 ========================================================= */
+.top-bar {
+  background-color: #09123b;  /* Azul oscuro corporativo */
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;  /* Puedes usar Roboto o Montserrat si quieres */
+  font-size: 13px;
+  padding: 6px 0;
+  width: 100%;
+  position: fixed;     /* Fija la barra arriba */
+  top: 0;
+  left: 0;
+  z-index: 9999;       /* Para que quede encima de todo */
+}
 
 /* ===== HEADER GENERAL ===== */
 header {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgb(255, 255, 255);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  /* Color transparente (azul oscuro con opacidad) */
+  background: #212455de; /* Ajusta el 0.35 si quieres más transparencia */
+
+  /* Efecto vidrio */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* Sombra elegante */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+
   margin: 0;
   padding: 0;
-  height: 14.5%;
+
+  /* Evita altura fija para que no se distorsione */
+  height: auto;
 }
 
 /* ===== CONTENEDOR DEL NAVBAR ===== */
 .navbar {
-  max-width: 1200px;
+  max-width: 2500px;
   margin: 0 auto;
-  padding: 0px 10px;
+  padding: 6px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,7 +99,7 @@ header {
 .brand-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1e3a8a;
+  color: #ffffff;
   margin: 0;
   line-height: 1;
 }
@@ -94,7 +117,7 @@ header {
 .navbar-right a {
   font-size: 120%;
   font-weight: 600;
-  color: #0b2545;
+  color: #ffffff;
   margin: 38px 15px;
   height: 100%;
   text-decoration: none;
@@ -102,7 +125,12 @@ header {
 }
 
 .navbar-right a:hover {
-  color: #2563eb;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.navbar-right a:hover {
+  color: #ffffff;
   transform: scale(1.1);
 }
 
@@ -127,14 +155,14 @@ header {
   height: 100%;              /* 👈 ocupa todo el alto del navbar */
   padding: 0px;              /* 👈 agranda el área de hover horizontalmente */
   text-decoration: none;
-  color: #0b2545;
+  color: #ffffff;
   font-weight: 600;
   transition: color 0.3s ease, background 0.3s ease;
-}
+} 
 
 /* Hover del enlace principal */
 .dropdown:hover > a {
-  color: #2563eb;
+  color: #ffffff;
 }
 
 /* Menú desplegable */
@@ -143,9 +171,9 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   min-width: 180px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
   border-radius: 6px;
   z-index: 1500;
   padding: 8px 0;
@@ -155,6 +183,16 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.dropdown-content > a:hover {
+  color:#000000;
+  transform: scale(1.1);
+}
+
+.dropdown-content > a {
+  color:#000000;
+}
+
 
 /* =========================================================
    🔹 MENÚ RESPONSIVE (MÓVIL)
@@ -188,7 +226,7 @@ header {
   }
 
   .navbar-right a {
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 10px 0;
   }
 

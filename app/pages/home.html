@@ -10,6 +10,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,7 +21,8 @@
   <link rel="stylesheet" href="styleu.css">
   <link rel="stylesheet" href="carousel.css">
   <link rel="stylesheet" href="navbar.css"> <!-- 🔹 nuevo archivo con los estilos del menú -->
-  <link rel="stylesheet" href="footer.css"> <!-- 🔹 nuevo archivo con los estilos del footer -->  
+  <link rel="stylesheet" href="footer.css"> <!-- 🔹 nuevo archivo con los estilos del footer -->
+  <link rel="stylesheet" href="features.css">
 
   <!-- Scripts -->
   <script src="menu.js" defer></script>
@@ -29,11 +32,15 @@
 
 <body class="body-page" style="background-image: url('bomberos-fondo.png');">
 
+  <div class="top-bar">
+    <span>CONTACTANOS +57 316 276 6850  /  +57 310 651 5651</span>
+  </div>
+
   <!-- ===== HEADER / NAVBAR ===== -->
   <header>
     <div class="navbar">
         <a href="home.html" class="logo-link">
-          <img src="Adobe Express - file.png" alt="Pronaltex Logo" class="logo_title">
+          <img src="Logo_ult_pronaltex.png" alt="Pronaltex Logo" class="logo_title">
         </a>
 
       <button class="menu-toggle" id="menu-toggle">
@@ -48,7 +55,7 @@
         <div class="dropdown">
           <a href="cataloge.html" class="dropbtn">Catálogo</a>
           <div class="dropdown-content">
-            <a href="#">Equipos contra incendios</a>
+            <a href="#">Equipos contra incendios </a>
             <a href="#">Equipos de emergencia</a>
             <a href="#">Equipo de protección personal</a>
             <a href="#">Señalización</a>
@@ -70,10 +77,8 @@
 
     <!-- 🔥 TEXTO DEL HERO SOLO PARA LA PRIMERA IMAGEN -->
       <div class="carousel-hero">
-        <h1>BIENVENIDO A 
-          
-          PRONALTEX</h1>
-        <p>¡Innovando en seguridad industrial para Colombia!</p>
+        <h1>BIENVENIDO A PRONALTEX</h1>
+        <p>Innovando en seguridad industrial para Colombia</p>
         <a href="about.html" class="hero-btn">QUIÉNES SOMOS</a>
       </div>
     </div>
@@ -106,26 +111,31 @@
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  <!-- ===== FEATURES ===== -->
-  <section class="bg-white bg-opacity-90 py-16">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-      <div class="text-center">
-        <img src="image/quality.jpg" alt="Education Icon" class="mx-auto mb-4 w-full">
-        <h3 class="text-xl font-bold mb-2 text-blue-800">Quality Education</h3>
-        <p class="text-gray-700">Top-notch programs designed to help students achieve excellence.</p>
-      </div>
-      <div class="text-center">
-        <img src="image/modern.jpg" alt="Innovation Icon" class="mx-auto mb-4 w-full">
-        <h3 class="text-xl font-bold mb-2 text-blue-800">Modern Innovation</h3>
-        <p class="text-gray-700">State-of-the-art facilities and technology-enhanced learning environment.</p>
-      </div>
-      <div class="text-center">
-        <img src="image/strong.jpg" alt="Community Icon" class="mx-auto mb-4 w-full">
-        <h3 class="text-xl font-bold mb-2 text-blue-800">Strong Community</h3>
-        <p class="text-gray-700">Join a vibrant and supportive student community on campus.</p>
-      </div>
+<!-- ===== FEATURES ===== -->
+<section class="features-section">
+  <div class="features-container">
+    
+    <div class="feature-card">
+      <img src="proteger.png" alt="Seguridad Icono" class="feature-img">
+      <h3 class="feature-title">Seguridad</h3>
+      <p class="feature-text">Soluciones integrales que garantizan la protección del personal y las operaciones.</p>
     </div>
-  </section>
+
+    <div class="feature-card">
+      <img src="debida-diligencia.png" alt="Mantenimiento Icono" class="feature-img">
+      <h3 class="feature-title">Mantenimiento</h3>
+      <p class="feature-text">Servicios especializados para mantener equipos industriales en óptimas condiciones.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="image/strong.jpg" alt="Productos Icono" class="feature-img">
+      <h3 class="feature-title">Productos</h3>
+      <p class="feature-text">Equipos certificados y confiables que cumplen normativas de seguridad industrial.</p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- ===== CONTENIDO PRINCIPAL ===== -->
   <section class="flex flex-col items-center justify-center text-center pt-40 pb-20">
