@@ -34,7 +34,7 @@ app.use("/api/productos", productRoutes); // ✅ AHORA SÍ
 
 // 🌐 Rutas principales del sitio
 app.get("/", (req, res) =>
-  res.sendFile(path.join(__dirname, "/pages/home.html"))
+  res.sendFile(path.join(__dirname, "/pages/index.html"))
 );
 app.get("/register", (req, res) =>
   res.sendFile(path.join(__dirname, "/pages/register.html"))

@@ -18,7 +18,7 @@ app.use("/api", userRoutes);
 
 // Servir páginas HTML directamente
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "pages", "home.html"));
+  res.sendFile(path.join(__dirname, "pages", "index.html"));
 });
 
 const PORT = 4000;

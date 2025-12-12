@@ -4,7 +4,7 @@ import mysql from "mysql2";
 export const conexion = mysql.createConnection({
   host: "localhost",
   user: "root",         // ⚠️ Cambia si tu usuario es otro
-  password: "***",         // ⚠️ Pon tu contraseña de MySQL aquí
+  password: "Jamir24230809..",         // ⚠️ Pon tu contraseña de MySQL aquí
   database: "db_mis_pronaltex"
 });
 
